@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--/**
+ * es-theme-zenodotus-coder.ZenodotusCoder.com
+ *
+ * Copyright (c) 2023 Zenodotus Coder <zenodotuscoder@gmail.com>
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ * @copyright 2023 Zenodotus Coder <zenodotuscoder@gmail.com>
+ * @license MIT
+ * @see {@link https://github.com/zenodotuscoderrepositories/es-theme-zenodotus-coder GitHub Repository}
+ * @see {@link https://es-theme-zenodotus-coder.zenodotuscoder.com/ Online Documentation}
+ * @author Zenodotus Coder <zenodotuscoder@gmail.com>
+ */-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="description" content="{{ site.description }}" />
+		<meta name="keywords" content="{% if page.title %}{{ page.title }},{% endif %}{% if site.title %}{{ site.title }},{% endif %}{{ site.description }}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/es-theme-zenodotus-coder.zenodotuscoder.com/images/favicon.ico" />
+		<link rel="icon" href="/es-theme-zenodotus-coder.zenodotuscoder.com/images/favicon.ico" />
+		<style>
+			/*
+			YUI 3.18.1 (build f7e7bcb)
+			Copyright 2014 Yahoo! Inc. All rights reserved.
+			Licensed under the BSD License.
+			http://yuilibrary.com/license/
+			Available at http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css
+			*/
+			html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+			html,body                { background-image:url('/es-theme-zenodotus-coder.zenodotuscoder.com/images/tiled-background.png');background-position:50% 0;background-size:85px 85px;color:#24292e;font-family:'Calibri',Arial,sans-serif;font-size:15px;text-align:center }
+			strong                   { font-weight:bold }
+			em                       { font-style:italic }
+			a                        { color:#0066cc;text-decoration:none }
+			a:hover                  { color:#3399ff;text-decoration:underline }
+			h1,h2                    { font-size:45px;font-weight:bold;font-weight:bold;padding:10px 10px 0 }
+			h2                       { color:#999999;font-size:30px;padding-top:0 }
+			@media only screen and (max-width:499px)  {
+				h1,h2 { font-size:33px }
+				h2    { font-size:22px }
+			}
+			p                        { line-height:150%;margin:0;padding:10px 10px 0 }
+			pre,pre code             { color:#999999;display:block;font-family:'Consolas','Courier New',Courier,monospace;font-size:14px;font-weight:bold;line-height:150%;overflow:hidden;padding:0;width:100% }
+			@media only screen and (max-width:699px) { pre,pre code { font-size:12px } }
+			@media only screen and (max-width:599px) { pre,pre code { font-size:10px } }
+			@media only screen and (max-width:499px) { pre,pre code { font-size:8px } }
+			@media only screen and (max-width:399px) { pre,pre code { font-size:7px } }
+			@media only screen and (max-width:349px) { pre,pre code { font-size:6px } }
+
+			#article,#header,#footer { position:relative;z-index:2 }
+			#article                 { padding:30px 0 0 }
+			@media only screen and (max-width:499px)  { #article { padding:5px 5px 0 } }
+			@media only screen and (max-height:499px) { #article { padding:5px 5px 0 } }
+			#article-inner           { background-color:#ffffff;border-radius:30px;margin:0 auto;-moz-border-radius:30px;padding:20px 20px 30px;width:700px }
+			@media only screen and (max-width:749px)  { #article-inner { border-radius:15px;-moz-border-radius:15px;padding:10px 10px 25px;width:auto } }
+			#footer                  { border-top:1px solid #dddddd;color:#999999;margin:20px auto 0;padding:0 0 350px;width:300px }
+			@media only screen and (min-width:1921px) { #footer { padding-bottom:700px } }
+			@media only screen and (max-width:1899px) { #footer { padding-bottom:335px } }
+			@media only screen and (max-width:1799px) { #footer { padding-bottom:320px } }
+			@media only screen and (max-width:1699px) { #footer { padding-bottom:305px } }
+			@media only screen and (max-width:1599px) { #footer { padding-bottom:290px } }
+			@media only screen and (max-width:1499px) { #footer { padding-bottom:275px } }
+			@media only screen and (max-width:1399px) { #footer { padding-bottom:260px } }
+			@media only screen and (max-width:1299px) { #footer { padding-bottom:245px } }
+			@media only screen and (max-width:1199px) { #footer { padding-bottom:230px } }
+			@media only screen and (max-width:1099px) { #footer { padding-bottom:215px } }
+			@media only screen and (max-width:999px)  { #footer { padding-bottom:200px } }
+			@media only screen and (max-width:899px)  { #footer { padding-bottom:180px } }
+			@media only screen and (max-width:799px)  { #footer { padding-bottom:160px } }
+			@media only screen and (max-width:699px)  { #footer { padding-bottom:140px } }
+			@media only screen and (max-width:599px)  { #footer { padding-bottom:120px } }
+			@media only screen and (max-width:499px)  { #footer { padding-bottom:100px } }
+			@media only screen and (max-width:399px)  { #footer { border-top:0;margin-top:0;padding-bottom:80px;width:auto } }
+			@media only screen and (max-width:299px)  { #footer { padding-bottom:60px } }
+			#footer a                { color:#999999 }
+			#footer a:hover          { color:#3399ff }
+			#avatar                  { border:5px solid #ffffff;border-radius:99px;display:block;height:75px;margin:0 auto;-moz-border-radius:99px;width:75px }
+			#athens                  { padding:0;pointer-events:none;position:relative;z-index:3 }
+			#athens img              { bottom:0;display:block;left:0;pointer-events:none;position:fixed;right:0;width:100%;z-index:3 }
+		</style>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5T90E1GSE"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-L5T90E1GSE');
+		</script>
+	</head>
+	<body>
+		<article>
+			<div id="article">
+				<div id="article-inner">
+					{{ content }}
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div id="footer">
+				<p><a href="https://www.zenodotuscoder.com/" title="ZenodotusCoder.com">ZenodotusCoder.com</a> &#169; 2023</p>
+			</div>
+		</footer>
+		<p id="athens">
+			<img src="/es-theme-zenodotus-coder.zenodotuscoder.com/images/athens.png" alt="" />
+		</p>
+	</body>
+</html>

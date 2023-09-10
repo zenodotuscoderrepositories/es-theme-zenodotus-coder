@@ -1,0 +1,16 @@
+title:        es-theme-zenodotus-coder.ZenodotusCoder.com
+name:         es-theme-zenodotus-coder.ZenodotusCoder.com
+description:  es-theme-zenodotus-coder.ZenodotusCoder.com
+author:       es-theme-zenodotus-coder
+author_email: zenodotuscoder@gmail.com
+email:        zenodotuscoder@gmail.com
+url:          "https://es-theme-zenodotus-coder.zenodotuscoder.com/"
+includes_dir: .
+layouts_dir:  es-theme-zenodotus-coder.zenodotuscoder.com/layouts
+exclude:      [
+               CNAME,
+               LICENSE,
+               README.md,
+               es-theme-zenodotus-coder.zenodotuscoder.com/layouts/*,
+               es-theme-zenodotus-coder.zenodotuscoder.com/README.md
+              ]
